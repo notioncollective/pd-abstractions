@@ -1,0 +1,10 @@
+#N canvas 0 534 840 490 10;
+#X declare -lib mrpeach;
+#X obj 182 142 import mrpeach;
+#X obj 209 187 udpreceive 9001;
+#X obj 209 224 unpackOSC;
+#X obj 209 262 routeOSC /com/notioncollective;
+#X obj 209 312 outlet;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
