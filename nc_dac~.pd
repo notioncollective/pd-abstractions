@@ -1,0 +1,21 @@
+#N canvas 333 149 457 448 10;
+#X obj 295 103 inlet~;
+#X obj 347 103 inlet~;
+#X obj 295 143 nc_limiter~;
+#X obj 297 189 spigot~;
+#X obj 298 354 dac~;
+#X obj 156 126 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -262144
+-1 -1 8900 1;
+#X obj 106 126 tgl 15 0 empty empty mute 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 299 312 *~;
+#X obj 373 141 nc_limiter~;
+#X connect 0 0 2 0;
+#X connect 1 0 8 0;
+#X connect 2 0 3 0;
+#X connect 3 0 7 0;
+#X connect 5 0 7 1;
+#X connect 6 0 3 1;
+#X connect 7 0 4 0;
+#X connect 8 0 3 0;
+#X coords 0 -1 1 1 170 50 1 100 100;
