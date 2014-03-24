@@ -1,0 +1,14 @@
+#N canvas 1 53 450 300 10;
+#X msg 87 91 open \$1;
+#X obj 87 129 readsf~ 2;
+#X obj 88 161 dac~;
+#X text 204 98 click here once file is open;
+#X msg 167 91 start;
+#X obj 166 36 inlet;
+#X obj 167 66 t b;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
